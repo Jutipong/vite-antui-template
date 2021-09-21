@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
@@ -9,7 +8,45 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "_PLGN_/*": [
+        "src/plugin/*"
+      ],
+      "_ROUTER_/*": [
+        "src/router/*"
+      ],
+      "_PAGE_/*": [
+        "src/page/*"
+      ],
+      "_COMP_/*": [
+        "src/components/*"
+      ],
+      "_STORE_/*": [
+        "src/store/*"
+      ],
+      "_API_/*": [
+        "src/api/*"
+      ],
+      "_TYPE_/*": [
+        "src/types/*"
+      ],
+      "_LAYOUT_/*": [
+        "src/layout/*"
+      ],
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
 }
